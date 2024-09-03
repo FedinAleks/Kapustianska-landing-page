@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapustianska</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container_home">
+        <video class="background_video" src="./image/IMG_6858.mov" autoplay muted loop></video>
+    </div>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about_me">Про мене</a></li>
+                <li><a href="#about_course">Про курс</a></li>
+                <li><a href="#you_need_course">Для кого курс</a></li>
+                <li><a href="#price_block">Тарифи</a></li>
+                <li><a href="#review_block">Відгуки</a></li>
+                <li><a href="#form">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button class="button_language" onclick="switchLanguage('ua')">UA</button>
+            <button class="button_language" onclick="switchLanguage('en')">EN</button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <button id="scrollToTopBtn" title="Go to top"></button>
+        <section class="block_home">
+            <h1>Розкутість та гнучкість: <br>мистецтво руху</h1>
+            <button class="button_startnow" onclick="scrollToPrice()">почни зараз</button>
+        </section>
+        <section id="about_me" class="about_me">
+            <div class="aboutme_text_block">
+                <h3>Привіт, я Юля - твій майбутній тренер по стретчинг</h3>
+                <p class="maintext_red">Я допоможу досягти гнучкості, яка змусить тебе сяяти! Мій курс містить інтегроване поєднання стретчингу та кардіо. Хочеш отримати тіло своєї мрії та розкутість, яка привертає увагу? Тоді почни вже сьогодні!</p>
+                <button class="button_secondary_red" onclick="window.open('https://www.instagram.com/yul.kpst/', '_blank')">instagram</button>
+            </div>
+            <div class="aboutme_image"></div>
+        </section>
+        <section id="about_course" class="about_course">
+            <h2>Що це за курс такий?</h2>
+            <p class="maintext_red">Мій курс - це твоя нова реальність! Ти отримаєш:</p>
+            <div class="about_course_list_block">
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-1.svg">
+                    <p class="course_list_title">Заняття в записі</p>
+                    <p class="course_list_maintext">Доступ до відеоуроків, які дозволять тобі займатися в будь-який зручний час</p>
+                </div>
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-2.svg">
+                    <p class="course_list_title">Комплекс вправ</p>
+                    <p class="course_list_maintext">Стретчинг у поєднанні з кардіо тренуваннями забезпечить всебічний розвиток твоєї фізичної форми</p>
+                </div>
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-3.png">
+                    <p class="course_list_title">Впевненість</p>
+                    <p class="course_list_maintext">Після закінчення курсу твоє тіло, граційність та осанка привертатимуть увагу інших</p>
+                </div>
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-4.svg">
+                    <p class="course_list_title">Зниження стресу</p>
+                    <p class="course_list_maintext">Регулярні вправи допоможуть тобі збільшити рівень енергії та зменшити стрес у повсякденному житті</p>
+                </div>
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-5.svg">
+                    <p class="course_list_title">Покращення здоров’я</p>
+                    <p class="course_list_maintext">Заняття сприятимуть загальному покращенню твого здоров’я та самопочуття</p>
+                </div>
+                <div class="about_course_list">
+                    <img src="./image/icon-stretch-6.svg">
+                    <p class="course_list_title">Секрети масажу</p>
+                    <p class="course_list_maintext">Вправи, що допоможуть зменшити або повністю позбутися болю в спині після довгого робочого дня</p>
+                </div>
+            </div>
+            <button class="button_secondary_red" onclick="scrollToPrice()">спробуй безкоштовно</button>
+        </section>
+        <section id="you_need_course" class="you_need_course">
+            <h2>Цей курс підходить тобі, якщо ти:</h2>
+            <div class="you_need_course_block">
+                <div class="you_need_course_image"></div>
+                <div class="you_need_course_textblock">
+                    <div class="you_need_course_list">
+                        <img src="./image/No1.svg">
+                        <div class="you_need_course_list_textblock">
+                            <p class="course_list_title">Мрієш про гарне тіло</p>
+                            <p class="course_list_maintext">Прагнеш досягти ідеальної форми та підтягнутості</p>
+                        </div>
+                    </div>
+                    <div class="you_need_course_list">
+                        <img src="./image/No2.svg">
+                        <div class="you_need_course_list_textblock">
+                            <p class="course_list_title">Швидко втомлюєшся</p>
+                            <p class="course_list_maintext">Прокидаєшся вже виснаженою і відчуваєш нестачу енергії протягом дня</p>
+                        </div>
+                    </div>
+                    <div class="you_need_course_list">
+                        <img src="./image/No3.svg">
+                        <div class="you_need_course_list_textblock">
+                            <p class="course_list_title">Постійно переживаєш стрес</p>
+                            <p class="course_list_maintext">Високий рівень стресу негативно впливає на твоє фізичне та психічне здоров'я</p>
+                        </div>
+                    </div>
+                    <div class="you_need_course_list">
+                        <img src="./image/No4.svg">
+                        <div class="you_need_course_list_textblock">
+                            <p class="course_list_title">Не відчуваєш себе розкутою з партнером</p>
+                            <p class="course_list_maintext">Вважаєш, що не така пластична, як інші дівчата, і це знижує твою впевненість</p>
+                        </div>
+                    </div>
+                    <div class="you_need_course_list">
+                        <img src="./image/No5.svg">
+                        <div class="you_need_course_list_textblock">
+                            <p class="course_list_title">Думаєш, що стретчинг - це лише про шпагат</p>
+                            <p class="course_list_maintext">Переконана, що цей вид тренувань не дасть тобі гарної постави чи підтягнутого тіла</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button_secondary_red" onclick="scrollToPrice()">так, це про мене!</button>
+        </section>
+        <section class="programs_block">
+            <h2>Для кого він?</h2>
+            <div class="programs_list">
+                <div class="program">
+                    <img src="./image/program_icon_1.svg">
+                    <p class="course_list_title">Trial <br>(для всіх, хто бажає)</p>
+                    <ul class="program_text">
+                        <li>Сумніваєшся в ефективності онлайн стретчингу: хочеш спробувати формат перед тим, як приймати остаточне рішення.</li>
+                        <li>Маєш напружений графік: шукаєш спосіб перевірити, чи підходить тобі стретчинг, як метод покращення здоров’я.</li>
+                    </ul>
+                    <button class="button_secondary_red" onclick="scrollToPrice()">почни зараз</button>
+                </div>
+                <div class="program">
+                    <img src="./image/program_icon_2.svg">
+                    <p class="course_list_title">Basic <br>(для новачків)</p>
+                    <ul class="program_text">
+                        <li>Тільки починаєш знайомство зі стретчингом: хочеш навчитися основам і покращити свою гнучкість.</li>
+                        <li>Шукаєш методи зниження стресу: прагнеш покращити психічне здоров’я за допомогою простих та ефективних вправ.</li>
+                    </ul>
+                    <button class="button_secondary_red" onclick="scrollToPrice()">почни зараз</button>
+                </div>
+                <div class="program">
+                    <img src="./image/program_icon_3.svg">
+                    <p class="course_list_title">Pro <br>(для досвідчених)</p>
+                    <ul class="program_text">
+                        <li>Маєш певний рівень фізичної підготовки: хочеш досягти більш високих результатів у стретчингу.</li>
+                        <li>Хочеш покращити свою гнучкість для спорту чи танців: прагнеш досягти нових висот у своїй фізичній підготовці. Шукаєш нові виклики!</li>
+                    </ul>
+                    <button class="button_secondary_red" onclick="scrollToPrice()">почни зараз</button>
+                </div>
+            </div>
+        </section>
+        <section id="price_block" class="price_block">
+            <h2>Для кого він?</h2>
+            <div class="price_tariffs">
+                <div class="price">
+                    <p class="price_title">Free trial</p>
+                    <p class="gift">🎁</p>
+                    <div class="price_numbers">
+                        <span class="price_dollar">$<span class="price_number">0</span></span>
+                        <p class="price_subtitle">Доступ на тиждень</p>
+                    </div>
+                    <div class="price_list">
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">Pозминка</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">1 тренування з розтяжки</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">2 тренування поперечний шпагат</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">1  тренування «Рухливість суглобів»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">1 тренування «Здорова спина»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">Самомасаж</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">Розтяжка в парі</p>
+                        </div>
+                    </div>
+                    <button class="button_secondary_red_price">оплатити</button>
+                </div>
+                <div class="price">
+                    <p class="price_title">Basic</p>
+                    <div class="price_numbers">
+                        <span class="price_dollar">$<span class="price_number">49.99</span></span>
+                        <p class="price_subtitle">Доступ на місяць</p>
+                    </div>
+                    <div class="price_list">
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">Pозминка</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">8 тренувань з розтяжки</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">🎁 ПОДАРУНОК</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">Самомасаж</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">2 тренування поперечний шпагат</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">1  тренування «Рухливість суглобів»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">1 тренування «Здорова спина»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-back.svg">
+                            <p class="price_text_tansparent">Розтяжка в парі</p>
+                        </div>
+                    </div>
+                    <button class="button_secondary_red_price">оплатити</button>
+                </div>
+                <div class="price">
+                    <p class="price_title">Pro</p>
+                    <div class="price_numbers">
+                        <span class="price_dollar">$<span class="price_number">69.99</span></span>
+                        <p class="price_subtitle">Доступ на 2 місяці</p>
+                    </div>
+                    <div class="price_list">
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">Pозминка кардіо + підкачка</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">8 тренувань з розтяжки</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">2 тренування поперечний шпагат</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">1  тренування «Рухливість суглобів»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">1 тренування «Здорова спина»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">1  тренування «Рухливість суглобів»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">1 тренування «Здорова спина»</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">🎁 ПОДАРУНОК</p>
+                        </div>
+                        <div class="price_list_block">
+                            <img src="./image/icon-tick.svg">
+                            <p class="price_subtitle">Розтяжка в парі</p>
+                        </div>
+                    </div>
+                    <button class="button_secondary_red_price">оплатити</button>
+                </div>
+            </div>
+        </section>        
+        <section id="review_block" class="review_block">
+            <h2>Вони змогли і ти зможеш!</h2>
+            <div class="testimonial-slider">
+                <button class="prev"></button>
+                <div class="slides-wrapper">
+                    <div class="slide active">
+                        <div class="video-container">
+                            <img src="./image/review_img_olena.png" alt="Olena">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Олена</p>
+                    </div>
+                    <div class="slide">
+                        <div class="video-container">
+                            <img src="./image/review_img_katya.png" alt="Katya">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Катя</p>
+                    </div>
+                    <div class="slide">
+                        <div class="video-container">
+                            <img src="./image/review_img_maria.png" alt="Anastasia">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Анастасія</p>
+                    </div>
+                    <div class="slide">
+                        <div class="video-container">
+                            <img src="./image/review_img_anastasia.png" alt="Masha">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Маша</p>
+                    </div>
+                    <div class="slide">
+                        <div class="video-container">
+                            <img src="./image/review_img_anastasia.png" alt="Masha">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Маша</p>
+                    </div>  
+                    <div class="slide">
+                        <div class="video-container">
+                            <img src="./image/review_img_anastasia.png" alt="Masha">
+                            <button class="play-btn" data-video="./image/IMG_6858.mov"></button>
+                        </div>
+                        <p class="maintext_red">Маша</p>
+                    </div>                  
+                </div>                
+                <button class="next"></button>
+            </div>
+            <button class="button_secondary_red" onclick="scrollToPrice()">почни зараз</button>            
+        </section>
+        <section id="form" class="form">
+            <div class="form_image"></div>
+            <div class="form-section">
+                <h3>Все ще вагаєшся, який рівень обрати?</h3>
+                <p class="maintext_red">Залиш заявку і я допоможу з вибором!</p>
+                <form action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ім'я*" required>
+                        <span class="error-message">Будь ласка, напиши ім'я</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон*" required pattern="[0-9]{10}">
+                        <span class="error-message">Будь ласка, напиши номер телефону</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="messenger" placeholder="Месенджер для зв'язку*" required>
+                        <span class="error-message">Будь ласка, напиши зручний месенджер для зв'язку</span>
+                    </div>
+                    <button class="button_secondary_red" type="submit">Надіслати</button>
+                </form>             
+            </div>
+        </section>
+        <section class="faq">
+            <h2>Поширені питання:</h2>
+            <div class="faq_wrapper">
+                <div class="question">
+                    <p class="maintext_red_faq">Чи підходить цей курс для початківців?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Так, курс має різні рівні складності, включаючи пробний і базовий рівні, які ідеально підходять для початківців. Ви зможете навчитися основам стретчингу з легкими та зрозумілими поясненнями.</p>
+                </div>
+                <div class="question">
+                    <p class="maintext_red_faq">В якому форматі проходить курс?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Це відео-уроки, з якими ви зможете займатися 24/7 в будь-якій точці світу. Обирайте для себе зручний час та місце для тренувань самостійно, та забудьте про відкладені мрії та плани!</p>
+                </div>
+                <div class="question">
+                    <p class="maintext_red_faq">Чи потрібне спеціальне обладнання для занять?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Так, для більшості вправ вам будуть потрібні килимок, два блоки, мʼячик, рол і еластична стрічка.</p>
+                </div>
+                <div class="question">
+                    <p class="maintext_red_faq">Як часто потрібно займатися, щоб побачити результати?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Рекомендується займатися принаймні 2-3 рази на тиждень для досягнення помітних результатів. Регулярні тренування допоможуть покращити гнучкість, знизити рівень стресу та покращити загальне самоаочуття.</p>
+                </div>
+                <div class="question">
+                    <p class="maintext_red_faq">Чи можу я займатися, якщо у мене були травми?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Перед початком занять рекомендується проконсультуватися з лікаре, особливо якщо у вас були серйозні травми. Я зможу надати модифікації вправ для адаптації до різних фізичних обмежень.</p>
+                </div>
+                <div class="question">
+                    <p class="maintext_red_faq">Чи можу я отримати персональні консультації від тренера?</p>
+                    <img src="./image/icon-plus.svg" class="toggle-icon">
+                </div>
+                <div class="answer">
+                    <p class="course_list_maintext">Якщо у вас виникнуть будь-які питання, я завджи готова надати консультацію для індивідуального підходу та максимального результату. Напишіть мені у будь-який месенджер.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_part1">
+                <div>
+                    <p class="footer_maintext">+1 437-552-6225</p>
+                    <p class="footer_maintext">yuliya.kapustyanskaya@gmail.com</p>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="footer_menu">
+                            <li><a href="#about_me">Про мене</a></li>
+                            <li><a href="#about_course">Про курс</a></li>
+                            <li><a href="#you_need_course">Для кого курс</a></li>
+                            <li><a href="#price_block">Тарифи</a></li>
+                            <li><a href="#review_block">Відгуки</a></li>
+                            <li><a href="#form">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer_part2">
+                <div class="footer_socialmedia">
+                    <img src="./image/icon-instagram.svg">
+                    <img src="./image/icon-telegram.svg">
+                </div>
+                <div class="footer_payments">
+                    <img src="./image/Payment Method/icon_wayforpay.svg">
+                    <img src="./image/Payment Method/Visa.svg">
+                    <img src="./image/Payment Method/Mastercard.svg">
+                </div>
+            </div>
+            <p class="footer_maintext">2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

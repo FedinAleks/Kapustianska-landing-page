@@ -24,6 +24,18 @@ document.getElementById("scrollToTopBtn").onclick = function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
+// MOBILE MENU 
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+// Закривання меню при натисканні на пункт меню
+document.querySelectorAll('.menu li a').forEach(link => {
+    link.addEventListener('click', function() {
+        toggleMenu(); // Закриваємо меню
+    });
+});
 
 // SELECTED BUTTON
 
@@ -112,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentSlide > 0) {
             currentSlide--;
         } else {
-            currentSlide = slides.length - visibleSlides; // Переходить до останнього набору слайдів
+            currentSlide = slides.length - visibleSlides;
         }
         updateSlidePosition();
     });
@@ -121,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentSlide < slides.length - visibleSlides) {
             currentSlide++;
         } else {
-            currentSlide = 0; // Повертає до першого набору слайдів
+            currentSlide = 0;
         }
         updateSlidePosition();
     });
@@ -136,8 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
             video.autoplay = true;
             
             const container = e.target.parentElement;
-            container.innerHTML = ''; // Видаляє зображення та кнопку
-            container.appendChild(video); // Додає елемент відео
+            container.innerHTML = '';
+            container.appendChild(video);
         });
     });
 

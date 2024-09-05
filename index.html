@@ -13,7 +13,14 @@
 
     <header>
         <nav>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="menu">
+                <p class="burger_menu_title">Меню</p>
+                <span class="close-menu" onclick="toggleMenu()">&#10005;</span>
                 <li><a href="#about_me">Про мене</a></li>
                 <li><a href="#about_course">Про курс</a></li>
                 <li><a href="#you_need_course">Для кого курс</a></li>
@@ -155,7 +162,7 @@
             </div>
         </section>
         <section id="price_block" class="price_block">
-            <h2>Для кого він?</h2>
+            <h2>Тарифи</h2>
             <div class="price_tariffs">
                 <div class="price">
                     <p class="price_title">Free trial</p>

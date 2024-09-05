@@ -639,7 +639,7 @@ h2 {
 .price_tariffs {
     display: flex;
     justify-content: space-around;
-    gap: 2em;
+    gap: 1em;
 }
 .price {
     padding: 2em;
@@ -681,6 +681,7 @@ h2 {
 .price_list_block {
     display: flex;
     gap: 1em;
+    margin-bottom: -0.5em;
 }
 .price_text_tansparent {
     font-family: 'Montserrat';

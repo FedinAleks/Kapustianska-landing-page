@@ -125,10 +125,18 @@ header {
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
 }
+.button_language.active {
+    border-bottom-color: #FFFCFA;
+}
 .button_language:hover {
     border-bottom-color: #FFFCFA;
 }
 
+@media (max-width: 1300px) {
+    .menu a {
+        font-size: 14px;
+    }
+}
 @media (max-width: 1200px) {
     .menu li {
         margin-right: 1.5em;
@@ -359,7 +367,7 @@ h1 {
     padding: 2em 2em;
 }
 h3 {
-    font-family: 'Montserrat';
+    font-family: 'Raleway';
     font-size: 40px;
     font-weight: 500;
     color: #A53512;
@@ -467,9 +475,10 @@ h2 {
 }
 .about_course_list_block {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
     padding: 2em 0;
+    gap: 3em;
 }
 .course_list_title {
     font-family: 'Montserrat';
@@ -579,23 +588,24 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
 .programs_list {
     display: flex;
-    justify-content: space-between;
-    gap: 2em; 
-    flex-wrap: nowrap; /* Дозволяє блокам переноситися на новий рядок */
+    justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap; /* Дозволяє блокам переноситися на новий рядок */
     align-items: stretch; /* Всі блоки будуть однієї висоти */
 }
 
 .program {
     background-color: #F8F4EF;
     padding: 2em;
-    max-width: 100%;
+    flex: 1 1 calc(27% - 1em); /* 3 блоки на рядок */
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Розподіл контенту всередині блоку */
+    justify-content: space-between; /* Розподіл контенту всередині блоку */
     align-items: center;
     min-height: 350px; /* Мінімальна висота для блоків */
 }
@@ -625,20 +635,25 @@ h2 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #A53512;
-    font-weight: 300
+    font-weight: 300;
+}
+.button_secondary_red_program:hover {
+    background-color: #A53512;
+    color: #FFFCFA;
 }
 
-@media (max-width: 1100px) {
-    .programs_list {
-        display: flex;
-        flex-direction: column; 
+@media (max-width: 1200px) {
+    .program {
+        flex: 1 1 calc(50% - 1em); /* 2 блоки на рядок при меншому екрані */
     }
 }
+
 @media (max-width: 768px) {
     .program {
-        height: auto;
+        flex: 1 1 calc(100% - 1em); /* 1 блок на рядок на мобільних пристроях */
     }
 }
+
 @media (max-width: 425px) {
     .button_secondary_red_program {
         font-size: 16px;
@@ -662,21 +677,24 @@ h2 {
     display: flex;
     justify-content: space-around;
     gap: 1em;
+    flex-wrap: wrap; /* Дозволяє блокам переноситися на новий рядок */
+    align-items: stretch; /* Всі блоки будуть однієї висоти */
 }
 .price {
-    padding: 2em;
     background-color: #F8F4EF;
-    max-width: 100%;
+    padding: 2em;
+    flex: 1 1 calc(22% - 1em); /* 3 блоки на рядок */
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Розподіл контенту всередині блоку */
     text-align: start;
     gap: 1em;
 }
 .gift {
     position: absolute;
     font-size: 60px;
-    right: 1em;
-    margin-top: -1%;
+    left: 4em;
+    margin-top: 0em;
 }
 .price_title {
     font-family: 'Montserrat';
@@ -730,11 +748,13 @@ h2 {
     color: #FFFCFA;
 }
 
-@media (max-width: 1100px) {
-    .price_tariffs {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 1278px) {
+    .gift {
+        left: 3.5em;
     }
+}
+@media (max-width: 1100px) {
+
 }
 @media (max-width: 425px) {
     .button_secondary_red_price {
@@ -823,6 +843,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .testimonial-slider {
     position: relative;
@@ -974,6 +995,14 @@ footer {
     font-family: 'Montserrat';
     color: #F8F4EF;
     font-weight: 300;
+}
+.footer_link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    text-decoration: underline;
 }
 .footer_menu {
     list-style: none;

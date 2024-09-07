@@ -456,3 +456,4 @@ function setLanguage(lang) {
 
 // Вибір мови за замовчуванням
 setLanguage('ua');
+

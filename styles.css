@@ -124,6 +124,7 @@ header {
     padding-bottom: 0.2em;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
+    cursor: pointer;
 }
 .button_language.active {
     border-bottom-color: #FFFCFA;
@@ -308,6 +309,7 @@ h1 {
     color: #FFFCFA;
     font-weight: 300;
     margin-bottom: 20em;
+    cursor: pointer;
 }
 .button_startnow:hover {
     background-color: #A53512;
@@ -390,6 +392,7 @@ h3 {
     font-family: 'Montserrat';
     color: #A53512;
     font-weight: 300;
+    cursor: pointer;
 }
 .button_secondary_red:hover {
     background-color: #A53512;
@@ -636,6 +639,7 @@ h2 {
     font-family: 'Montserrat';
     color: #A53512;
     font-weight: 300;
+    cursor: pointer;
 }
 .button_secondary_red_program:hover {
     background-color: #A53512;
@@ -742,6 +746,7 @@ h2 {
     font-family: 'Montserrat';
     color: #A53512;
     font-weight: 300;
+    cursor: pointer;
 }
 .button_secondary_red_price:hover {
     background-color: #A53512;
@@ -948,6 +953,7 @@ h2 {
     padding-bottom: 15px;
     text-align: left;
     gap: 1em;
+    cursor: pointer;
 }
 .faq_wrapper .answer {
     display: none;
@@ -1033,6 +1039,7 @@ footer {
 .footer_socialmedia {
     display: flex;
     gap: 1em;
+    cursor: pointer;
 }
 .footer_payments {
     display: flex;

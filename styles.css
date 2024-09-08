@@ -307,7 +307,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #FFFCFA;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20em;
     cursor: pointer;
 }
@@ -324,7 +324,7 @@ h1 {
     }
     .button_startnow { 
         font-size: 16px;
-        margin-bottom: 24em;
+        margin-bottom: 20em;
     }
 }
 @media (max-width: 475px) {
@@ -333,12 +333,17 @@ h1 {
         font-size: 40px;
     }
     .button_startnow {
-        margin-bottom: 25em;
+        margin-bottom: 23em;
+    }
+}
+@media (max-width: 425px) {
+    .button_startnow {
+        margin-bottom: 21em;
     }
 }
 @media (max-width: 375px) {
     .button_startnow { 
-        margin-bottom: 15em;
+        margin-bottom: 14em;
     }
 }
 @media (max-width: 320px) {
@@ -348,7 +353,7 @@ h1 {
     .button_startnow { 
         font-size: 14px;
         padding: 1em 2em;
-        margin-bottom: 15em;
+        margin-bottom: 13em;
     }
 }
 
@@ -391,7 +396,7 @@ h3 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #A53512;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
 }
 .button_secondary_red:hover {
@@ -471,9 +476,9 @@ h3 {
     gap: 1em;
 }
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Raleway';
     color: #1A1A1A;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 48px;
 }
 .about_course_list_block {
@@ -638,7 +643,7 @@ h2 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #A53512;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
 }
 .button_secondary_red_program:hover {
@@ -745,7 +750,7 @@ h2 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #A53512;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
 }
 .button_secondary_red_price:hover {

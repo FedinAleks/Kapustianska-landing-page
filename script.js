@@ -311,7 +311,7 @@ const translations = {
         menutitle: "Menu",
         aboutme: "About Me",
         aboutcourse: "About Course",
-        youneedcourse: "Who is the Course For",
+        youneedcourse: "For whom",
         pricing: "Pricing",
         reviews: "Reviews",
         contacts: "Contacts",
